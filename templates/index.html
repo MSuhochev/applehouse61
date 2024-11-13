@@ -1,0 +1,349 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <!-- Section First IMG START -->
+    <section id="picture1" class="bg-center-bottom block-1" 
+             style="background-image: url({% static 'img/main_screen_catalogue_13-2023-04-13-12-00-34.png' %});  
+                     background-color:#000; ">
+      <div class="container-fluid">
+        <div class="container py-5">
+          <div class="row row-cols-1 justify-content-center block-1-header wow fadeInUp" data-wow-duration="0.5s">
+            <div class="col">
+              <div class="d-flex justify-content-center align-items-center">
+                <p class="display-4 fw-bold text-center text-white">Сервис, достойный Apple</p>
+              </div>
+            </div>
+            <div class="col">
+              <a href="#" class="text-decoration-none">
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="m-0 text-primary me-2 h5">Сервис</p>
+                  <img src="{% static 'img/arrow-right.svg' %}" alt="arrow-right">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section First IMG END --> 
+        
+    <!-- Section By iPhone START --> 
+    <section id="picture2" class="py-5 bg-bottom block-2 wow fadeInUp" 
+             data-wow-duration="0.5s" 
+             style="background-image: url({% static 'img/700iPhone16ProBying-2024-09-14-14-18-37.png' %}); background-color:#000;">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row row-cols-1 justify-content-center block-2-header text-white fw-bold">
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <p class="h1 text-center"></p>
+              </div>
+            </div>
+            <div class="col">
+              <div class="d-flex justify-content-center">
+                <p class="display-4 fw-bold text-center"></p>
+              </div>
+            </div>
+            <div class="col">
+              <a href="product/iphone-11-87" class="text-decoration-none">
+                <div class="d-flex align-items-center justify-content-center">
+                  <p class="m-0 text-primary me-2 h5">Купить</p>
+                  <img src="{% static 'img/arrow-right.svg' %}" alt="arrow-right">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+    <!-- Section By iPhone END -->
+        
+    <!-- Section Categories START -->   
+    <section id="categories">
+      <div class="container-fluid my-2">
+        <div class="row row-cols-1 row-cols-md-2 g-2">
+    
+          <div class="col wow fadeInUp" data-wow-duration="0.5s">
+            <a href="product/iphone-16-291" class="text-decoration-none link-dark">
+              <div class="bg-bottom block-3 mobile-3 main-hover" id="iphone" 
+                   style="background-image: url({% static 'img/1372-2024-09-16-11-12-00.png' %}); 
+                           background-color:#f5f5f7;color:#000 ">
+                <div class="d-flex justify-content-md-end justify-content-start" id="position-right">
+                  <p class="display-4 fw-bold">iPhone 16</p>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col wow fadeInUp" data-wow-duration="0.5s">
+            <a href="product/macbook-air-15-m3-280" class="text-decoration-none link-dark">
+              <div class="bg-center block-3 mobile-4 main-hover" 
+                   style="background-image: url({% static 'img/1372-2024-09-16-14-44-56.png' %}); 
+                   background-color:#f5f5f7;color:#000">
+                  <div class="d-flex flex-column" id="position-left">
+                    <p class="display-4 fw-bold">Mac Air </p>
+                  </div>
+              </div>
+            </a>
+          </div>
+            
+          <div class="col wow fadeInUp" data-wow-duration="0.5s">
+            <a href="ipad" class="text-decoration-none link-dark">
+              <div class="bg-center block-3 mobile-5 main-hover" 
+                   style="background-image: url({% static 'img/1372-2024-09-16-14-26-12.png' %}); 
+                   background-color:#f5f5f7; color:#000">
+                <div class="d-flex justify-content-md-end justify-content-start" id="position-right">
+                  <p class="display-4 fw-bold">iPad</p>
+                </div>
+              </div>
+            </a>
+          </div>
+            
+          <div class="col wow fadeInUp" data-wow-duration="0.5s">
+            <a href="product/apple-watch-10-293" class="text-decoration-none link-dark">
+              <div class="bg-bottom block-3 mobile-6 main-hover" 
+                   style="background-image: url({% static 'img/1372-2024-09-16-14-36-18.png' %}); 
+                   background-color:#f5f5f7; color:#000">
+                <div class="d-flex flex-column" id="position-left">
+                  <p class="display-4 fw-bold">Watch 10</p>
+                </div>
+              </div>
+            </a>
+          </div>
+    
+          <div class="col wow fadeIn" data-wow-duration="0.5s">
+            <a href="product/airpods-max-190" class="text-decoration-none link-dark">
+              <div class="bg-bottom block-3 mobile-7 main-hover" 
+                   style="background-image: url({% static 'img/1372-2024-09-14-17-13-50.png' %}); 
+                   background-color:#f5f5f7; color:#000">
+                <div class="d-flex justify-content-md-end justify-content-start" id="position-right">
+                  <p class="display-4 fw-bold">AirPods Max</p>
+                </div>
+              </div>
+            </a>
+          </div>
+            
+          <div class="col wow fadeIn" data-wow-duration="0.5s">
+            <a href="marshall" class="text-decoration-none link-dark">
+              <div class="bg-center block-3 mobile-8 main-hover" 
+                   style="background-image: url({% static 'img/1372-2024-09-16-14-39-07.png' %}); 
+                   background-color:#f5f5f7 ;color:#000">
+                <div class="d-flex flex-column" id="position-left">
+                  <p class="display-4 fw-bold">Marshall</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col wow fadeIn" data-wow-duration="0.5s">
+            <a href="PS 5" class="text-decoration-none link-dark">
+              <div class="bg-bottom block-3 mobile-9 main-hover" 
+                   style="background-image: url({% static 'img/1372-2024-09-16-11-37-08.png' %}); 
+                   background-color:#f5f5f7; color:#000">
+                <div class="d-flex justify-content-md-end justify-content-start" id="position-right">
+                  <p class="display-4 fw-bold">PS 5</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col wow fadeIn" data-wow-duration="0.5s">
+            <a href="dyson" class="text-decoration-none link-dark">
+              <div class="bg-center block-3 mobile-10 main-hover" 
+                   style="background-image: url({% static 'img/1372-2024-09-17-15-46-24.png' %}); 
+                   background-color:#f5f5f7 ;color:#000">
+                <div class="d-flex flex-column" id="position-left">
+                  <p class="display-4 fw-bold">Dyson</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Categories END -->
+        
+    <!-- Section Trade in START -->   
+    <section>
+      <div class="container-fluid">
+        <div class="text-white py-5 block-4 wow fadeIn" id="trade-in" data-wow-duration="0.5s" 
+             style="background-image: url({% static 'img/main-screen-catalogue-5002-2023-11-03-12-28-20.png' %}); 
+             background-color:#fff; background-position:center;">
+          <div class="col-12 col-lg-6 h-100">
+            <div class="d-flex flex-column justify-content-md-center align-items-center px-3 h-100">
+              <p class="display-5 fw-bold">Trade-in</p>
+              <p class="h4 text-center mb-3">Обменяй старый смартфон на новый</p>
+              <a href="traid-in" class="text-decoration-none">
+                <div class="d-flex align-items-end">
+                  <p class="m-0 text-primary text-center me-2 h5">Перейти <br>в калькулятор Trade-in</p>
+                  <img src="{% static 'img/arrow-right.svg' %}" class="mb-1" alt="">
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Trade in END -->
+    
+    <!-- Section Apple Watch START -->    
+    <section id="offers1">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-12 col-md-5">
+            <div class="row gx-1 gy-3">
+              <div class="col-12 bg-center-cover rounded offer-middle wow fadeIn" data-wow-duration="0.5s" 
+                   style="background-image: url({% static 'img/apple-watch-2024-09-16-15-32-09.png' %}); 
+                   background-color:#f5f5f7;">
+                <div class="d-flex p-4 h-100">
+                  <p class="h2 fw-bold">Больше спорта. Никогда не сдавайся.</p>
+                </div>
+              </div>
+              <div class="col-12 bg-center rounded default-hover wow fadeIn" data-wow-duration="0.5s" style="background-color:#f5f5f7;">
+                <a href="/product/apple-watch-ultra-2-274" class="text-decoration-none link-dark">
+                  <div class="d-flex flex-column p-4 my-3 h-100">
+                    <p class="h2 fw-bold">Apple Watch Ultra 2</p>
+                    <div class="d-flex">
+                      <p class="mb-1 text-primary text-center me-2">Подробнее</p>
+                      <img src="https://applehouse61.ru/tpl/img/arrow-right.svg" class="mb-1" alt="">
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-7 mt-3 mt-md-0 d-md-block d-none">
+            <div class="d-flex justify-content-center p-4 bg-center rounded offer-big wow fadeIn" data-wow-duration="0.5s" 
+                 style="background-image: url({% static 'img/apple-watch-2024-09-16-15-28-29.png' %}); 
+                 background-color:#f5f5f7;">
+              <p class="display-5 pt-5 m-0 h-100"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Apple Watch END -->
+        
+    <!-- Section AirPods START -->
+    <section id="offers2">
+      <div class="container mt-4 pb-5">
+        <div class="row gx-1 gx-md-3 gy-3">
+          <div class="col-12 col-md-9">
+            <div class="d-flex justify-content-center p-4 bg-center-cover rounded wow fadeIn h-100" 
+                 data-wow-duration="0.5s" 
+                 style="background-image: url({% static 'img/air-pods-pro-2024-09-16-16-31-01.png' %}); 
+                 background-color:#000;">
+              <p class="h2 pt-5 m-0 text-center text-white fw-bold"></p>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <a href="product/airpods-pro-2go-pokoleniya-189" class="text-decoration-none link-dark">
+              <div class="d-flex flex-column align-items-center justify-content-center h-100 rounded default-hover wow fadeIn" 
+                   data-wow-duration="0.5s" style="background-color:#F5F5F7;">
+                <div class="p-4">
+                  <p class="h2 fw-bold m-0">AirPods Pro </p>
+                  <p class="">          (2‑го поколения)</p>
+                  <div class="d-flex">
+                    <p class="m-0 text-primary text-center me-2">Подробнее</p>
+                    <img src="{% static 'img/arrow-right.svg' %}" class="mb-1" alt="">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-12">
+            <div class="d-flex justify-content-center p-4 bg-center rounded bg-apple-offer offer-small wow fadeIn" 
+                 data-wow-duration="0.5s" 
+                 style="background-image: url({% static 'img/air-pods-2024-09-16-16-28-27.png' %}); 
+                 background-color:#000;">
+              <p class="display-5 py-5 m-0"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section AirPods END -->
+    
+    <!-- Section FAQ START -->    
+    <section id="faq" class="bg-light border-bottom py-5">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-12 col-md-5">
+            <div class="row row-cols-1 g-3">
+              <div class="col wow fadeIn" data-wow-duration="0.5s">
+                <div class="card border-0 p-5 shadow" style="background-color:#f5f5f7;">
+                  <p class="h2 fw-bold">О нас</p>
+                  <p class="m-0">Добро пожаловать в магазин AppleHouse! Наше основное направление - продажа устройств Apple, Marshall и Dyson по самым выгодным ценам. В нашем магазине Вы всегда найдете самые последние новинки, которые не оставят вас равнодушными к ним!</p>
+                </div>
+              </div>
+              <div class="col wow fadeIn" data-wow-duration="0.5s">
+                <div class="card border-0 p-5 shadow" style="background-color:#f5f5f7;">
+                  <p class="h2 fw-bold">Немного про iPhone</p>
+                  <p class="m-0">Айфон это ультрасовременный смартфон, который снискал для компании Apple огромную популярность и мировое признание. iPhone - не просто средство связи, а многофункциональное устройство, отличающееся удобством функционала и уникальным дизайном.<br><br> Брендовый девайс ультрамоден, стилен, элегантен, и ежегодно бьет рекорды продаж. Все слышали про добротность Айфона, его надежность, производительность. Мощные процессоры позволяют запускать самые сложные приложения, играть в новейшие игры, при этом графика высококачественна, а скорость работы велика. iPhone обладает широким перечнем преимуществ, которые сложно перечислить кратким списком.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-7">
+            <div class="row row-cols-1 g-3">
+              <div class="col wow fadeIn" data-wow-duration="0.5s">
+                <div class="card border-0 p-5 shadow" style="background-color:#f5f5f7;">
+                  <p class="h2 fw-bold">Почему стоит купить Айфон у нас:</p>
+                  <p class="m-0">Вы получите:<br><br> Гарантия от производителя Apple - 1 год<br> Доставка по городу!<br>  Поможем перенести данные со старого телефона на новый!<br> Создадим ваш личный Apple ID: (личный аккаунт) для загрузок игр и приложений!</p>
+                </div>
+              </div>
+              <div class="col wow fadeIn" data-wow-duration="0.5s">
+                <div class="card border-0 p-5 shadow" style="background-color:#f5f5f7;">
+                  <p class="h2 fw-bold">Презент</p>
+                  <p class="m-0">Стоит отметить, что приобретая в нашем магазине, вы получаете оригинальный продукт по доступной цене и официальную гарантию. Кроме того, если вы найдете Айфон дешевле, чем у нас, мы готовы сделать дополнительную скидку.<br><br> Наш магазин предлагает только оригинальную продукцию, соответствующую самым строгим стандартам качества. Мы заботимся о каждом клиенте, предлагая удобные условия покупки и уровень сервиса. Если у вас возникнут вопросы или сомнения в выборе оптимальной модели Айфон, вы можете связаться с нами по указанным контактам, и наши менеджеры окажут самую профессиональную консультацию. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>        
+    <!-- Section FAQ END -->    
+        
+    <!-- Section Advantages START -->
+    <section id="advantages">
+      <div class="container py-5 col-12 col-sm-12 mx-auto">
+        <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 justify-content-center g-3">
+          <div class="col">
+            <div class="bg-right pb-5 text-white rounded advantages-main wow fadeInUp" data-wow-duration="0.5s" 
+                 style="background-image: url({% static 'img/advantage420220701093829-2023-03-14-18-44-27.png' %}); 
+                 background-color:#333333; ">
+              <div class="d-flex flex-column align-items-center justify-content-center p-5">
+                <p class="h2 fw-bold text-center">Гарантия</p>
+                <p class="text-center">Официальная гарантия от производителя на всю технику Apple</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-bottom pb-5 text-white rounded advantages-main wow fadeInUp" data-wow-duration="0.5s" 
+                 style="background-image: url({% static 'img/Frame29520221216135437-2023-03-14-18-44-22.png' %}); 
+                 background-color:#579FF2; ">
+              <div class="d-flex flex-column align-items-center justify-content-center p-5">
+                <p class="h2 fw-bold text-center">Свой сервис</p>
+                <p class="text-center">Ремонт техники Apple и гарантия от 180 дней на наши работы</p>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="bg-right-bottom pb-5 text-white rounded advantages-main wow fadeInUp" data-wow-duration="0.5s" 
+                 style="background-image: url({% static 'img/advantage320220701093904-2023-03-14-18-44-16.png' %}); 
+                 background-color:#F87C9F; ">
+              <div class="d-flex flex-column align-items-center justify-content-center p-5">
+                <p class="h2 fw-bold text-center">Низкая цена</p>
+                <p class="text-center">Самая низкая цена на продукцию Apple в Ростове-на-Дону</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Section Advantages END -->
+    
+{% endblock content %}

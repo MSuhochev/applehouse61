@@ -1,0 +1,79 @@
+{% load static %}
+
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Дополнительные категории</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <p>Попробуйте прокрутить страницу для демонстрации.</p>
+      </div>
+    </div>
+
+    <section id="menu" class="">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark-apple fixed-top shadow-lg">
+        <div class="container col-9 col-sm-12 mx-auto">
+          <a class="navbar-brand" href="/">
+            <img height="51" class="d-md-none d-lg-block d-xl-none" src="{% static 'img/logo.svg' %}" alt="">
+            <img height="51" class="d-none d-md-block d-lg-none d-xl-block"  src="{% static 'img/logo_max.svg' %}" alt="">
+          </a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" 
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                  aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse pb-4 pb-lg-0 collapse" id="navbarSupportedContent">
+            <ul class="justify-content-around mb-2 mb-lg-0 navbar-nav px-0 px-lg-3 w-100">
+              <li class="nav-item">
+                <a class="nav-link" href="/service-center">Сервис</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/iphone">iPhone</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/mac">Mac</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/apple-watch">Watch</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/ipad">iPad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/airpods">AirPods</a>
+              </li>
+              <li class="nav-item dropdown link_hover">
+                <a class="nav-link dropdown-toggle text-primary" href="#" role="button" 
+                   data-bs-toggle="dropdown" aria-expanded="false">New
+                </a>
+                <ul class="dropdown-menu bg-dark-apple text-white p-0 my-2 my-lg-0 border-0 link_hover_child">
+                  <li><a class="dropdown-item nav-link" href="/ps-5">PS-5</a></li>
+                  <li><a class="dropdown-item nav-link" href="/dyson">Dyson</a></li>
+                  <li><a class="dropdown-item nav-link" href="/marshall">Marshall</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/trade-in">Trade-in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/contacts">Контакты</a>
+              </li>
+            </ul>
+            <div class="align-items-lg-end align-items-start d-flex flex-column">
+              <div class="d-flex align-items-center">
+                <a href="tel:+70000000000" class="text-decoration-none link-white me-1">
+                  <p class="m-0 text-nowrap text-white">+7 938 111 51 21</p>
+                </a>
+                <a href="tg://resolve?domain=applehouse61" 
+                   class="text-decoration-none mx-1 d-flex" target="_blank" rel="noopener noreferrer">
+                    <img height="24" src="{% static 'img/telegram.svg' %}" alt="telegram icon"></a>
+                <a href="https://wa.me/+79381115121" 
+                   class="text-decoration-none mx-1 d-flex" target="_blank" rel="noopener noreferrer">
+                    <img height="24" src="{% static 'img/whatsapp.svg' %}" alt="whatsapp icon"></a>
+              </div>
+              <p class="m-0 text-primary fw-bold">пр. Кировский 45</p>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>

@@ -1,0 +1,92 @@
+{% load static %}
+
+<section id="footer" class="bg-dark-apple wow fadeInUp">
+    <div class="container pt-5">
+        <div class="row">
+            <div class="col-12 col-xl-9">
+                <div class="d-flex justify-content-center justify-content-sm-start">
+                    <a href="/">
+                        <img src="{% static 'img/logo.svg' %}" alt="" class="img-rounded center-block">
+                    </a>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-9 col-sm-12 col-xl-9 mx-auto">
+                        <div class="justify-content-sm-start row row-cols-2 row-cols-sm-4">
+                            <!-- Sections for iPhone, iPad, etc. Links -->
+                            {% for section, links in footer_links.items %}
+                            <div class="col">
+                                <div class="d-flex flex-column text-sm-start">
+                                    <a href="#" class="fw-bold link-light text-decoration-none fw-bold footer-item">
+                                        #
+                                    </a>
+                                    {% for link in links.sub %}
+                                    <a href="#" class="fw-normal link-light text-decoration-none">#</a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <!-- Contact Info for Desktop -->
+                    <div class="col-12 col-xl-3 d-none d-xl-block">
+                        <div class="d-flex flex-column">
+                            <p class="fw-bold link-light text-decoration-none fw-bold m-0">Телефон</p>
+                            <p class="fw-normal link-light text-decoration-none m-0">{{ phone }}</p>
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                            <p class="fw-bold link-light text-decoration-none fw-bold m-0">Адрес</p>
+                            <p class="fw-normal link-light text-decoration-none m-0">{{ address.full }}</p>
+                        </div>
+                        <div class="d-flex flex-column mt-4">
+                            <p class="fw-bold link-light text-decoration-none fw-bold m-0">График работы</p>
+                            <p class="fw-normal link-light text-decoration-none m-0">{{ work_schedule | safe }}</p>
+                        </div>
+                        <div class="d-flex mt-4">
+                            {% for social in social_links %}
+                            <a href="#" class="fw-bold link-light text-decoration-none fw-bold me-2">
+                                <img height="24" src="#" alt="" class="img-rounded center-block">
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Contact Info for Mobile -->
+            <div class="col-12 col-sm-6 d-block d-xl-none text-center text-sm-start mt-5">
+                <!-- Similar to desktop section -->
+            </div>
+            <!-- Callback Form Section -->
+            <div class="col-12 col-sm-6 col-xl-3 mt-5 mt-xl-0">
+                <div class="d-flex flex-column h-100 justify-content-center w-100">
+                    <form class="form form1 feedback_form" method="post" action="#">
+                        {% csrf_token %}
+                        <div>
+                            <p class="text-white text-center text-sm-start">Остались вопросы? <br> Оставьте заявку и мы перезвоним</p>
+                            <div class="col-9 col-md-12 col-sm-12 form mx-auto">
+                                <div class="form-floating mb-3">
+                                    <input id="name1" type="text" name="name" class="form-control border-0 shadow-sm" placeholder="Имя">
+                                    <label for="name1" class="text-secondary">Введите имя</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input id="tel1" type="text" class="form-control border-0 shadow-sm" name="tel" placeholder="Телефон">
+                                    <label for="tel1" class="text-secondary">Введите телефон</label>
+                                </div>
+                                <input type="submit" disabled class="btn form1 btn-primary w-100 text-white py-3 feedback_button" value="Оставить заявку" />
+                            </div>
+                        </div>
+
+                        <div class="feedback_result form1 mt-4">
+                            <!-- Success and error messages -->
+                            <div class="danger errors d-none mt-3 alert alert-danger text-center py-2"></div>
+                            <div class="success d-none mt-3 alert alert-success text-center py-2">
+                                <strong>Заявка успешно отправлена!</strong><br> Наши специалисты свяжутся с Вами в ближайшее рабочее время.
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr class="hr-default">
+        <p class="m-0 pb-3 text-white text-center">Copyright © {{ current_year }} Apple House</p>
+    </div>
+</section>
